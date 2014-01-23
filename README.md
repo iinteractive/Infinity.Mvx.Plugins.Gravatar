@@ -1,0 +1,2 @@
+Infinity.Mvx.Plugins.Gravatar
+=============================
