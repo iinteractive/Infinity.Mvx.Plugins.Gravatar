@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infinity.Mvx.Plugins.Gravat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infinity.Mvx.Plugins.Gravatar.Touch", "Infinity.Mvx.Plugins.Gravatar.Touch\Infinity.Mvx.Plugins.Gravatar.Touch.csproj", "{5B03874F-4AA2-41A9-A44D-BE1B800577D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infinity.Mvx.Plugins.Gravatar.WindowsPhone", "Infinity.Mvx.Plugins.Gravatar.WindowsPhone\Infinity.Mvx.Plugins.Gravatar.WindowsPhone.csproj", "{03A876FB-D5A4-4156-A0A9-9F8F7744E88B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,20 @@ Global
 		{5B03874F-4AA2-41A9-A44D-BE1B800577D9}.Release|ARM.ActiveCfg = Release|Any CPU
 		{5B03874F-4AA2-41A9-A44D-BE1B800577D9}.Release|x64.ActiveCfg = Release|Any CPU
 		{5B03874F-4AA2-41A9-A44D-BE1B800577D9}.Release|x86.ActiveCfg = Release|Any CPU
+		{03A876FB-D5A4-4156-A0A9-9F8F7744E88B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03A876FB-D5A4-4156-A0A9-9F8F7744E88B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03A876FB-D5A4-4156-A0A9-9F8F7744E88B}.Debug|ARM.ActiveCfg = Debug|ARM
+		{03A876FB-D5A4-4156-A0A9-9F8F7744E88B}.Debug|ARM.Build.0 = Debug|ARM
+		{03A876FB-D5A4-4156-A0A9-9F8F7744E88B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{03A876FB-D5A4-4156-A0A9-9F8F7744E88B}.Debug|x86.ActiveCfg = Debug|x86
+		{03A876FB-D5A4-4156-A0A9-9F8F7744E88B}.Debug|x86.Build.0 = Debug|x86
+		{03A876FB-D5A4-4156-A0A9-9F8F7744E88B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03A876FB-D5A4-4156-A0A9-9F8F7744E88B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03A876FB-D5A4-4156-A0A9-9F8F7744E88B}.Release|ARM.ActiveCfg = Release|ARM
+		{03A876FB-D5A4-4156-A0A9-9F8F7744E88B}.Release|ARM.Build.0 = Release|ARM
+		{03A876FB-D5A4-4156-A0A9-9F8F7744E88B}.Release|x64.ActiveCfg = Release|Any CPU
+		{03A876FB-D5A4-4156-A0A9-9F8F7744E88B}.Release|x86.ActiveCfg = Release|x86
+		{03A876FB-D5A4-4156-A0A9-9F8F7744E88B}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
