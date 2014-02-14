@@ -8,6 +8,7 @@ namespace Infinity.Mvx.Plugins.Gravatar
 {
     public interface IMvxGravatarTask
     {
-        Uri CreateGravatarUrl(string email, int size);
+        Uri CreateGravatarUri(string email, int size);
+        string CreateGravatarUrl(string email, int size);
     }
 }
