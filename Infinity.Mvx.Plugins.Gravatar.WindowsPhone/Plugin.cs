@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Cirrious.CrossCore.Plugins;
+﻿using Cirrious.CrossCore.Plugins;
 
 namespace Infinity.Mvx.Plugins.Gravatar.WindowsPhone
 {
@@ -12,7 +7,7 @@ namespace Infinity.Mvx.Plugins.Gravatar.WindowsPhone
     {
         public void Load()
         {
-            Cirrious.CrossCore.Mvx.RegisterType<IMvxGravatarTask, MvxGravatarTask>();
+            Cirrious.CrossCore.Mvx.RegisterSingleton<IMvxGravatarTask>(new MvxWindowsPhoneGravatar());
         }
     }
 }
