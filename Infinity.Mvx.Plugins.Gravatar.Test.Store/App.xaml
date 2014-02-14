@@ -1,0 +1,7 @@
+﻿<Application
+    x:Class="Infinity.Mvx.Plugins.Gravatar.Test.Store.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Infinity.Mvx.Plugins.Gravatar.Test.Store">
+
+</Application>

@@ -7,7 +7,7 @@ namespace Infinity.Mvx.Plugins.Gravatar.WindowsStore
     {
         public void Load()
         {
-            Cirrious.CrossCore.Mvx.RegisterType<IMvxGravatarTask, MvxGravatarTask>();
+            Cirrious.CrossCore.Mvx.RegisterSingleton<IMvxGravatarTask>(new MvxWindowsStoreGravatar());
         }
     }
 }

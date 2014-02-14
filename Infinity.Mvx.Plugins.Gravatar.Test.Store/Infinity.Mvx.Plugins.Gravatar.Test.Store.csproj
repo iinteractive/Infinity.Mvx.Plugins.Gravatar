@@ -4,22 +4,22 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{CE967B96-1E86-4393-92AB-CE0EC97D1D03}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{F260D9E2-137A-40E5-A366-7D8302EC7520}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Infinity.Mvx.Plugins.Gravatar.WindowsStore</RootNamespace>
-    <AssemblyName>Infinity.Mvx.Plugins.Gravatar.WindowsStore</AssemblyName>
+    <RootNamespace>Infinity.Mvx.Plugins.Gravatar.Test.Store</RootNamespace>
+    <AssemblyName>Infinity.Mvx.Plugins.Gravatar.Test.Store</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformVersion>8.1</TargetPlatformVersion>
     <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>Infinity.Mvx.Plugins.Gravatar.Test.Store_TemporaryKey.pfx</PackageCertificateKeyFile>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -29,6 +29,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -103,14 +104,47 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="MvxWindowsStoreGravatar.cs" />
-    <Compile Include="Plugin.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Bootstrap\GravatarPluginBootstrap.cs" />
+    <Compile Include="DebugTrace.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setup.cs" />
+    <Compile Include="Views\FirstView.xaml.cs">
+      <DependentUpon>FirstView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config">
+    <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
-    </None>
+    </AppxManifest>
+    <None Include="Infinity.Mvx.Plugins.Gravatar.Test.Store_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="ToDo-MvvmCross\_ Windows Store UI.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\FirstView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">
@@ -119,11 +153,25 @@
     <Reference Include="Cirrious.CrossCore.WindowsStore">
       <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.14\lib\netcore45\Cirrious.CrossCore.WindowsStore.dll</HintPath>
     </Reference>
+    <Reference Include="Cirrious.MvvmCross">
+      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.0.14\lib\netcore45\Cirrious.MvvmCross.dll</HintPath>
+    </Reference>
     <Reference Include="Cirrious.MvvmCross.Localization">
       <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.14\lib\netcore45\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
+    <Reference Include="Cirrious.MvvmCross.WindowsStore">
+      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.0.14\lib\netcore45\Cirrious.MvvmCross.WindowsStore.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Infinity.Mvx.Plugins.Gravatar.Test.Core\Infinity.Mvx.Plugins.Gravatar.Test.Core.csproj">
+      <Project>{a7d42473-e9c6-4b4b-bd19-f844504514df}</Project>
+      <Name>Infinity.Mvx.Plugins.Gravatar.Test.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infinity.Mvx.Plugins.Gravatar.WindowsStore\Infinity.Mvx.Plugins.Gravatar.WindowsStore.csproj">
+      <Project>{ce967b96-1e86-4393-92ab-ce0ec97d1d03}</Project>
+      <Name>Infinity.Mvx.Plugins.Gravatar.WindowsStore</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Infinity.Mvx.Plugins.Gravatar\Infinity.Mvx.Plugins.Gravatar.csproj">
       <Project>{b965158a-ed85-4c78-bfe3-637117765ed1}</Project>
       <Name>Infinity.Mvx.Plugins.Gravatar</Name>
