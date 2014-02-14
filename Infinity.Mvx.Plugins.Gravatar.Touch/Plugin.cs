@@ -15,13 +15,7 @@ namespace Infinity.Mvx.Plugins.Gravatar.Touch
     {
         public void Load()
         {
-            Cirrious.CrossCore.Mvx.RegisterType<IMvxGravatarTask, MvxGravatarTask>();
-            Cirrious.CrossCore.Mvx.CallbackWhenRegistered<IMvxValueConverterRegistry>(RegisterValueConverter);
-        }
-
-        private void RegisterValueConverter()
-        {
-            Cirrious.CrossCore.Mvx.Resolve<IMvxValueConverterRegistry>().AddOrOverwriteFrom(GetType().Assembly);
+            Cirrious.CrossCore.Mvx.RegisterSingleton<IMvxGravatarTask>(new MvxTouchGravatar());
         }
     }
 }
