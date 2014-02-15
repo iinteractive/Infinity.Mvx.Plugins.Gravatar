@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>MvvmCross.Plugins.Gravatar</id>
+        <version>0.1.5</version>
+        <title>MvvmCross - Community Gravatar Plugin</title>
+        <authors>Sean Sparkman</authors>
+        <owners>Infinity Interactive,Inc.</owners>
+        <projectUrl>http://www.iinteractive.com</projectUrl>
+        <iconUrl>http://www.iinteractive.com/images/home-hexagon-item2.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>MvvmCross Plugin for Gravatar URL's</description>
+        <releaseNotes>Initial Release</releaseNotes>
+        <copyright>Copyright 2014</copyright>
+        <dependencies>
+            <dependency id="MvvmCross.HotTuna.CrossCore" version="3.0.14" />
+        </dependencies>
+    </metadata>
+    <files>
+    
+        <file src="..\Infinity.Mvx.Plugins.Gravatar.Droid\bin\Debug\Infinity.Mvx.Plugins.Gravatar.dll" target="lib\monoandroid\Infinity.Mvx.Plugins.Gravatar.dll" />
+        <file src="..\Infinity.Mvx.Plugins.Gravatar.Droid\bin\Debug\Infinity.Mvx.Plugins.Gravatar.Droid.dll" target="lib\monoandroid\Infinity.Mvx.Plugins.Gravatar.Droid.dll" />
+        <file src="..\Common\droid\GravatarPluginBootstrap.cs.pp" target="content\monoandroid\Bootstrap\GravatarPluginBootstrap.cs.pp" />
+        
+        <file src="..\Infinity.Mvx.Plugins.Gravatar.Touch\bin\iPhone\Debug\Infinity.Mvx.Plugins.Gravatar.dll" target="lib\monotouch\Infinity.Mvx.Plugins.Gravatar.dll" />
+        <file src="..\Infinity.Mvx.Plugins.Gravatar.Touch\bin\iPhone\Debug\Infinity.Mvx.Plugins.Gravatar.Touch.dll" target="lib\monotouch\Infinity.Mvx.Plugins.Gravatar.Touch.dll" />
+        <file src="..\Common\monotouch\GravatarPluginBootstrap.cs.pp" target="content\monotouch\Bootstrap\GravatarPluginBootstrap.cs.pp" />
+        
+        <file src="..\Infinity.Mvx.Plugins.Gravatar.WindowsStore\bin\Debug\Infinity.Mvx.Plugins.Gravatar.dll" target="lib\win8\Infinity.Mvx.Plugins.Gravatar.dll" />
+        <file src="..\Infinity.Mvx.Plugins.Gravatar.WindowsStore\bin\Debug\Infinity.Mvx.Plugins.Gravatar.WindowsStore.dll" target="lib\win8\Infinity.Mvx.Plugins.Gravatar.WindowsStore.dll" />
+        <file src="..\Common\general\GravatarPluginBootstrap.cs.pp" target="content\win8\Bootstrap\GravatarPluginBootstrap.cs.pp" />
+        
+        <file src="..\Infinity.Mvx.Plugins.Gravatar.WindowsPhone\Bin\Debug\Infinity.Mvx.Plugins.Gravatar.dll" target="lib\wp8\Infinity.Mvx.Plugins.Gravatar.dll" />
+        <file src="..\Infinity.Mvx.Plugins.Gravatar.WindowsPhone\Bin\Debug\Infinity.Mvx.Plugins.Gravatar.WindowsPhone.dll" target="lib\wp8\Infinity.Mvx.Plugins.Gravatar.WindowsPhone.dll" />
+        <file src="..\Common\general\GravatarPluginBootstrap.cs.pp" target="content\wp8\Bootstrap\GravatarPluginBootstrap.cs.pp" />
+                
+        <file src="..\Infinity.Mvx.Plugins.Gravatar\bin\Debug\Infinity.Mvx.Plugins.Gravatar.dll" target="lib\portable-net45+wp8+win8+monoandroid+monotouch\Infinity.Mvx.Plugins.Gravatar.dll" />
+    </files>
+</package>

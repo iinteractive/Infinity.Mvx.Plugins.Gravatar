@@ -8,9 +8,9 @@
     <ProjectGuid>{5B03874F-4AA2-41A9-A44D-BE1B800577D9}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Infinity.MvvmCross.Plugins.Gravatar.Touch</RootNamespace>
+    <RootNamespace>Infinity.Mvx.Plugins.Gravatar.Touch</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>Infinity.MvvmCross.Plugins.Gravatar.Touch</AssemblyName>
+    <AssemblyName>Infinity.Mvx.Plugins.Gravatar.Touch</AssemblyName>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
   </PropertyGroup>
