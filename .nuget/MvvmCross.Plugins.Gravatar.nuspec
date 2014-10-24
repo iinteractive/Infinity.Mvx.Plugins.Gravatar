@@ -6,10 +6,10 @@
         <title>MvvmCross - Community Gravatar Plugin</title>
         <authors>Sean Sparkman</authors>
         <owners>Infinity Interactive,Inc.</owners>
-        <projectUrl>http://www.iinteractive.com</projectUrl>
+        <projectUrl>https://github.com/iinteractive/Infinity.Mvx.Plugins.Gravatar</projectUrl>
         <iconUrl>http://www.iinteractive.com/images/home-hexagon-item2.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>MvvmCross Plugin for Gravatar URL's</description>
+        <description>MvvmCross Plugin for Gravatar URLs</description>
         <releaseNotes>Initial Release</releaseNotes>
         <copyright>Copyright 2014</copyright>
         <dependencies>
